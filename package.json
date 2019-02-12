@@ -1,0 +1,23 @@
+{
+	"name": "dotfiles",
+	"version": "0.0.1",
+	"description": "dotfiles by slavkobojanic",
+	"main": "setup.js",
+	"scripts": {
+		"setup": ""
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:slavkobojanic/.dotfiles.git"
+	},
+	"author": "Slavko Bojanic <sb115@uowmail.edu.au>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/slavkobojanic/.dotfiles/issues"
+	},
+	"dependencies": {
+		"inquirer": "1.0.2",
+		"node-emoji": "1.3.0"
+	}
+}
