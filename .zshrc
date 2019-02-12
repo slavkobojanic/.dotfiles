@@ -104,4 +104,19 @@ function vexp () {
     git push
 }
 
+function ga () {
+	git add $@
+}
+
+function gc () {
+	git commit $1
+}
+
+function gph () {
+	git status
+	git add $1
+	git commit -m $2
+	git push
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
