@@ -52,6 +52,7 @@ set termguicolors
 let ayucolor="dark"
 colorscheme ayu
 let g:airline_theme='ayu'
+let g:airline_powerline_fonts = 1
 
 " Remove error-bell visual aid
 set noerrorbells
