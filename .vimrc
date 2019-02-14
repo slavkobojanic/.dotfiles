@@ -17,6 +17,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
@@ -69,10 +70,13 @@ set backspace=indent,eol,start
 " Keybindings
 let mapleader=","
 
+" -- Async Lint Engine
 nnoremap <leader>gd :ALEGoToDefinition<CR>
 nnoremap <leader>gf :ALEFindReferences<CR>
 
+" -- NerdTREE
 nnoremap <leader>. :NERDTreeToggle<CR>
 
+" -- FuzzyFile
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fg :GFiles<CR>
