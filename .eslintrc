@@ -6,7 +6,7 @@
   "globals": {
   },
   "rules": {
-	"esversion": 6
+	"esversion": 6,
     "camelcase": 0,
     "comma-spacing": 0,
     "quotes": [0, "single"],

@@ -11,28 +11,20 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
-Plug 'ayu-theme/ayu-vim'
 Plug 'w0rp/ale'
+Plug 'ayu-theme/ayu-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
-" ALE configuration in correrspondence with my .prettierrc and .eslintrc
-let g:ale_linters = {
-\	'javascript': ['eslint'],
-\   'scss': ['stylelint']
-\}
-let g:ale_fix_on_save = 1
-let g:ale_javascript_eslint_use_global = 1
-let g:airline#extensions#ale#enabled = 1
 
 " Prettier Config
 let g:prettier#config#parser = 'flow'

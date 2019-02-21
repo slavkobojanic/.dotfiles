@@ -119,4 +119,11 @@ function gph () {
 	git push
 }
 
+function killport () {
+	id=$(lsof -t -i :$1)
+	prcss=$(ps aux | grep $id)
+	kill -9 $port
+	echo "Killed" $prcss " with id of " $id
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
