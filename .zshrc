@@ -121,9 +121,8 @@ function gph () {
 
 function killport () {
 	id=$(lsof -t -i :$1)
-	prcss=$(ps aux | grep $id)
-	kill -9 $port
-	echo "Killed" $prcss " with id of " $id
+	kill -9 $id
+	echo "Killed" $id
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
