@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
 Plug 'leafgarland/typescript-vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
@@ -42,9 +43,9 @@ if has("termguicolors")
 endif
 set t_Co=256
 set termguicolors
-let ayucolor="dark"
-colorscheme ayu
-let g:airline_theme='ayu'
+set bg=dark
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 
 " Remove error-bell visual aid
