@@ -11,14 +11,11 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
-Plug 'w0rp/ale'
-Plug 'ayu-theme/ayu-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
-Plug 'leafgarland/typescript-vim'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
@@ -59,17 +56,16 @@ set number
 set showbreak=+++
 set undolevels=1000
 set backspace=indent,eol,start
+set autochdir
 
 " Keybindings
 let mapleader=","
 
-" -- Async Lint Engine
-nnoremap <leader>gd :ALEGoToDefinition<CR>
-nnoremap <leader>gf :ALEFindReferences<CR>
+" -- General Binds
 
 " -- NerdTREE
 nnoremap <leader>. :NERDTreeToggle<CR>
 
 " -- FuzzyFile
-nnoremap <leader>ff :Files<CR>
-nnoremap <leader>fg :GFiles<CR>
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :GFiles<CR>
