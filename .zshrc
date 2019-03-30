@@ -75,15 +75,12 @@ function killport () {
 	echo "Killed" $id
 }
 
-function vexp() {
-	yarn run export
-	git add .
-	git commit -m "Export"
-	gp
+function va() {
+	source venv/bin/activate
 }
 
-function re-wm () {
-	brew services restart chunkwm && brew services restart skhd
+function vd() {
+	deactivate
 }
 
 if [[ ! $TERM =~ screen ]]; then
