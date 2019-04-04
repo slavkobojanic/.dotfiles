@@ -83,6 +83,17 @@ function vd() {
 	deactivate
 }
 
+function pi() {
+	pip install $1
+}
+
+function pippy() {
+	for mod in "$@"; do
+		pip install $mod
+	done
+}
+
+
 if [[ ! $TERM =~ screen ]]; then
     exec tmux
 fi
