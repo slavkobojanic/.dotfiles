@@ -76,24 +76,15 @@ function killport () {
 }
 
 function va() {
-	source venv/bin/activate
+	source .env/bin/activate
 }
 
 function vd() {
 	deactivate
 }
 
-function pi() {
-	pip install $1
-}
-
 function pippy() {
-	for mod in "$@"; do
-		pip install $mod
+	for module in "$@"; do
+		pip install $module
 	done
 }
-
-
-if [[ ! $TERM =~ screen ]]; then
-    exec tmux
-fi
