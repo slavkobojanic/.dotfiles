@@ -17,12 +17,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
 Plug 'joshdick/onedark.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" Vim JSX
+let g:jsx_ext_required = 1
 
 " Prettier Config
 let g:prettier#config#parser = 'flow'

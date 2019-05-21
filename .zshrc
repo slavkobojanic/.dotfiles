@@ -1,9 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/slavko/.oh-my-zsh"
 
+
 ZSH_DISABLE_COMPFIX=true
 
-plugins=(git, zsh-syntax-highlighting, zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autocompletion)
 
 source $ZSH/oh-my-zsh.sh
 
