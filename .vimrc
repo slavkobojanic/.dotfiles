@@ -19,6 +19,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'joshdick/onedark.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
