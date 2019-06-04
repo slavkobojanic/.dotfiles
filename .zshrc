@@ -15,7 +15,9 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[magenta]%})"
 RPS1='%{$fg[magenta]%}%T%{$reset_color%}'
 
-precmd() {print ""}
+
+autoload -U promptinit; promptinit
+prompt pure
 
 function killport () {
 	id=$(lsof -t -i :$1)
