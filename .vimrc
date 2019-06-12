@@ -16,10 +16,10 @@ Plug 'mhinz/vim-startify'
 Plug 'junegunn/fzf.vim'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
-Plug 'joshdick/onedark.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'wakatime/vim-wakatime'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
@@ -47,8 +47,10 @@ endif
 set t_Co=256
 set termguicolors
 set bg=dark
-colorscheme onedark
-let g:airline_theme='onedark'
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 let g:airline_powerline_fonts = 1
 
 " Remove error-bell visual aid
