@@ -19,6 +19,8 @@ RPS1='%{$fg[magenta]%}%T%{$reset_color%}'
 autoload -U promptinit; promptinit
 prompt pure
 
+alias tm="tmux attach"
+
 function killport () {
 	id=$(lsof -t -i :$1)
 	kill -9 $id
@@ -43,3 +45,5 @@ function pippy() {
 		pip install $module
 	done
 }
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM

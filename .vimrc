@@ -20,6 +20,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'wakatime/vim-wakatime'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Cursor shapes with non-dependency on terminal type
@@ -41,15 +42,10 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Colorscheme
-if has("termguicolors")
-	set termguicolors
-endif
-set t_Co=256
-set termguicolors
-set bg=dark
 syntax enable
 set background=dark
 colorscheme solarized
+let g:airline_theme = 'solarized'
 let g:solarized_termcolors=256
 let g:airline_powerline_fonts = 1
 
