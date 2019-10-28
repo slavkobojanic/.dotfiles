@@ -15,6 +15,13 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[magenta]%})"
 RPS1='%{$fg[magenta]%}%T%{$reset_color%}'
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/slavko/Library/Android/sdk
+export ANDROID_AVD_HOME=/Users/slavko/.android/avd
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 autoload -U promptinit; promptinit
 prompt pure
@@ -45,5 +52,7 @@ function pippy() {
 		pip install $module
 	done
 }
+
+alias icloud="cd /Users/slavko/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
